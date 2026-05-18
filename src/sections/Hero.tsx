@@ -9,7 +9,7 @@ import {
 import { SITE } from "../constants/site";
 import { HeroBackground } from "../components/ui/HeroBackground";
 import { MagneticButton } from "../components/ui/MagneticButton";
-import { Typewriter } from "../components/ui/Typewriter";
+import heroImage from "../assets/ansh2-optimized.jpg";
 
 export function Hero() {
   const socialLinks = [
@@ -41,7 +41,7 @@ export function Hero() {
               transition={{ delay: 0.2 }}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white border border-[#e5e7eb] mb-8 shadow-[0_1px_2px_rgba(0,0,0,0.02),0_4px_12px_rgba(0,0,0,0.04)] dark:bg-white/5 dark:border-white/10 animate-float"
             >
-              <span className="text-lg">👋</span>
+              <span className="text-lg" aria-hidden="true">Hi</span>
               <span className="text-[10px] font-black uppercase tracking-widest text-[#737373] dark:text-white/50">
                 Hello, I'm {SITE.name.split(" ")[0]}
               </span>
@@ -138,8 +138,12 @@ export function Hero() {
               >
                 <div className="absolute inset-0 bg-[#6366f1]/5 mix-blend-overlay group-hover:bg-transparent transition-colors duration-700" />
                 <img
-                  src="/src/assets/ansh.png"
+                  src={heroImage}
                   alt={SITE.name}
+                  width="500"
+                  height="500"
+                  decoding="async"
+                  fetchPriority="high"
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100"
                 />
 

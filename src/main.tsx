@@ -5,12 +5,15 @@ import { BrowserRouter } from 'react-router-dom'
 import { Toaster } from 'sonner'
 import './index.css'
 import App from './App.tsx'
+import { ErrorBoundary } from './components/ErrorBoundary.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <HelmetProvider>
       <BrowserRouter>
-        <App />
+        <ErrorBoundary>
+          <App />
+        </ErrorBoundary>
         <Toaster richColors closeButton position="top-center" />
       </BrowserRouter>
     </HelmetProvider>

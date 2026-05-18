@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { FiCode, FiDatabase, FiLayout, FiServer, FiArrowRight } from 'react-icons/fi'
 import { AnimatedCounter } from '../components/ui/AnimatedCounter'
-import { about, SITE } from '../constants/site'
+import { about } from '../constants/site'
 
 const stats = [
   { value: 3, label: 'Projects', suffix: '+' },

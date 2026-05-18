@@ -15,8 +15,7 @@ export const SITE = {
   phone: '+91-9467497707',
   location: 'Dehradun, Uttarakhand',
   resumeUrl: '/Ansh_Sharma_Resume.docx',
-  /** Optional: set to your Formspree endpoint for real submissions */
-  formEndpoint: '' as string,
+  formEndpoint: import.meta.env.VITE_FORMSPREE_ENDPOINT ?? '',
   social: {
     github: 'https://github.com/anshsuyal',
     linkedin: 'https://www.linkedin.com/in/ansh-sharma-14072005w22',
