@@ -1,0 +1,7 @@
+
+> portfolio@0.0.0 start
+> vite preview --host 0.0.0.0 --port 4177
+
+Port 4177 is in use, trying another one...
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4178[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://10.99.139.129:[1m4178[22m/[39m
