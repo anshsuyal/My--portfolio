@@ -1,6 +1,6 @@
 export const about = {
   intro:
-    'I am a MERN stack full-stack developer with 1+ year of hands-on experience building responsive web apps, REST APIs, JWT authentication flows, and real-time features with Socket.io.',
+    'Aspiring Software Engineer with a strong interest in Full Stack Development. Currently focused on mastering JavaScript, React.js, Node.js, Express.js, and MongoDB while building real-world projects that emphasize performance, scalability, and clean architecture.',
   goals:
     'I enjoy turning practical product ideas into clean, scalable interfaces and production-ready backends. My current focus is React, Node.js, Express.js, MongoDB, and cloud deployment workflows.',
   highlights: ['MERN stack development', 'Real-time apps with Socket.io', 'JWT auth & REST APIs'],
@@ -14,7 +14,7 @@ export const SITE = {
   email: 'sharmaansh9386@gmail.com',
   phone: '+91-9467497707',
   location: 'Dehradun, Uttarakhand',
-  resumeUrl: '/Ansh_Sharma_Resume.docx',
+  resumeUrl: '/Ansh_Sharma_Resume_doc.docx',
   formEndpoint: import.meta.env.VITE_FORMSPREE_ENDPOINT ?? '',
   social: {
     github: 'https://github.com/anshsuyal',
@@ -45,7 +45,7 @@ export const projects: Project[] = [
     image:
       'https://images.unsplash.com/photo-1611606063065-ee7946f0787a?auto=format&fit=crop&w=1200&q=80',
     stack: ['React.js', 'Redux Toolkit', 'Node.js', 'Socket.io', 'MongoDB', 'Cloudinary'],
-    github: SITE.social.github,
+    github: 'https://github.com/anshsuyal/ChatApplication.git',
     live: '#contact',
     category: 'realtime',
   },
@@ -57,19 +57,19 @@ export const projects: Project[] = [
     image:
       'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80',
     stack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Socket.io', 'JWT'],
-    github: SITE.social.github,
+    github: 'https://github.com/anshsuyal/job-portal.git',
     live: '#contact',
     category: 'fullstack',
   },
   {
     id: '3',
-    title: 'NSS Website Maintenance',
+    title: 'Ai-assitence',
     description:
       'Managed the official NSS website, shipped event and announcement pages, resolved technical bugs, and improved content flow for 5,000+ monthly visitors.',
     image:
       'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80',
-    stack: ['React.js', 'HTML5', 'CSS3', 'JavaScript', 'Git'],
-    github: SITE.social.github,
+    stack: ['React.js', 'node js', 'CSS3', 'JavaScript', 'mongodb' , 'express js', 'gemini api' , 'Authentication jwt ' , 'cloudinary'],
+    github: 'https://github.com/anshsuyal/Ai-Assistanent.git',
     live: '#experience',
     category: 'web',
   },

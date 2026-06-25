@@ -4,10 +4,10 @@ import { AnimatedCounter } from '../components/ui/AnimatedCounter'
 import { about } from '../constants/site'
 
 const stats = [
-  { value: 3, label: 'Projects', suffix: '+' },
+  { value: 5, label: 'Projects', suffix: '+' },
   { value: 1, label: 'Year Exp', suffix: '+' },
   { value: 12, label: 'Tech Stack', suffix: '+' },
-  { value: 100, label: 'Client Satisfaction', suffix: '%' },
+  // { value: 100, label: 'Client Satisfaction', suffix: '%' },
 ]
 
 const services = [

@@ -153,7 +153,7 @@ export function Hero() {
                     {SITE.name.toUpperCase()}
                   </span>
                   <span className="text-[#818cf8] text-[10px] font-black uppercase tracking-[0.4em]">
-                    Developer & Designer
+                    Developer
                   </span>
                 </div>
               </motion.div>
@@ -167,7 +167,7 @@ export function Hero() {
               <FloatingCard
                 className="bottom-[18%] left-[-16%] [animation-delay:1s]"
                 icon="🎨"
-                label="UI Designer"
+                label="Backend"
               />
               <FloatingCard
                 className="top-[48%] right-[-20%] [animation-delay:2s]"
