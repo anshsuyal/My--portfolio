@@ -155,6 +155,9 @@ This is a single-page personal site — there's no routing to configure beyond t
 ---
 
 ## 📸 Screenshots
+<img width="1917" height="906" alt="image" src="https://github.com/user-attachments/assets/19f11de0-f7a5-4df8-b373-466f46011c44" />
+<img width="1917" height="901" alt="image" src="https://github.com/user-attachments/assets/cc61045a-5e79-4f3c-8baf-5c939af937b5" />
+
 
 
 ---
