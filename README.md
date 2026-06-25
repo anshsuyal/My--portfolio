@@ -4,18 +4,14 @@
 
 ### A modern, animated, MERN-developer portfolio built with React 19, TypeScript, and Tailwind CSS v4.
 
-[![Live Demo](https://anshusuyalportfolio.vercel.app/)
-
-
-[View Demo](#-live-demo) · [Report Bug](https://github.com/anshsuyal/My--portfolio/issues) · [Request Feature](https://github.com/anshsuyal/My--portfolio/issues)
-
+[![Live Demo](https://img.shields.io/badge/Live-Demo-6366f1?style=for-the-badge&logo=vercel&logoColor=white)](https://anshusuyalportfolio.vercel.app/)
 </div>
 
 ---
 
 ## 📖 About
 
-This repository powers the personal portfolio website of **Ansh Suyal**, a final-year BCA student and aspiring Full Stack (MERN) Developer. The site is built as a fully client-rendered single-page application with React Router, animated section transitions, a WebGL hero background, and a working contact form — designed to give recruiters and hiring managers a fast, visual overview of skills, experience, and shipped projects.
+This repository powers the personal portfolio website of **Ansh Suyal**,aspiring Full Stack (MERN) Developer. The site is built as a fully client-rendered single-page application with React Router, animated section transitions, a WebGL hero background, and a working contact form — designed to give recruiters and hiring managers a fast, visual overview of skills, experience, and shipped projects.
 
 The goal of this codebase is to demonstrate **production-grade frontend engineering practices**: strict TypeScript, component composition, accessible markup, theming, and performance-conscious animation — not just a static HTML resume.
 
