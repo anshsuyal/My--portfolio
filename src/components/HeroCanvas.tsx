@@ -34,7 +34,7 @@ function Core() {
 
 export function HeroCanvas() {
   return (
-    <div className="pointer-events-none absolute inset-0 -z-10 h-full opacity-60 dark:opacity-40">
+    <div className="pointer-events-none absolute inset-0 -z-10 h-full opacity-40">
       <Canvas
         camera={{ position: [0, 0, 5], fov: 45 }}
         dpr={[1, 2]}

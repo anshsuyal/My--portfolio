@@ -38,7 +38,7 @@ export function CursorGlow() {
     <>
       {/* Large Spotlight Background Effect */}
       <motion.div
-        className="pointer-events-none fixed inset-0 z-[1] opacity-40 dark:opacity-30"
+        className="pointer-events-none fixed inset-0 z-[1] opacity-30"
         style={{
           background: `radial-gradient(800px circle at ${mouseX}px ${mouseY}px, var(--spotlight-color), transparent 80%)`
         }}

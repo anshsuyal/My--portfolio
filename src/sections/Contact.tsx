@@ -65,7 +65,7 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="relative overflow-hidden px-4 py-24 md:py-32 md:px-8 bg-white dark:bg-transparent">
+    <section id="contact" className="relative overflow-hidden px-4 py-24 md:py-32 md:px-8 bg-transparent">
       <div className="container mx-auto max-w-7xl">
         <div className="grid gap-16 lg:grid-cols-2 lg:items-start">
           <motion.div
@@ -75,21 +75,21 @@ export function Contact() {
             transition={{ duration: 0.8 }}
           >
             <p className="text-[10px] font-black uppercase tracking-[0.4em] text-[#6366f1]">Contact</p>
-            <h2 className="mt-4 font-display text-4xl font-black tracking-tight text-[#0a0a0a] dark:text-white md:text-5xl lg:text-6xl">
+            <h2 className="mt-4 font-display text-4xl font-black tracking-tight text-white md:text-5xl lg:text-6xl">
               Let&rsquo;s talk about your next project<span className="text-[#6366f1]">.</span>
             </h2>
-            <p className="mt-6 text-base md:text-lg text-[#404040] dark:text-white/70 leading-relaxed">
+            <p className="mt-6 text-base md:text-lg text-white/70 leading-relaxed">
               I&rsquo;m always open to new opportunities, collaborations, or just a friendly chat about technology.
             </p>
 
             <div className="mt-10 space-y-5">
-              <a href={`mailto:${SITE.email}`} className="group flex items-center gap-4 text-[#0a0a0a] dark:text-white transition-colors">
+              <a href={`mailto:${SITE.email}`} className="group flex items-center gap-4 text-white transition-colors">
                 <div className="accent-gradient flex h-11 w-11 items-center justify-center rounded-xl text-white shadow-[0_4px_12px_rgba(99,102,241,0.25)] group-hover:scale-110 transition-transform">
                   <FiMail size={18} />
                 </div>
                 <span className="text-base font-bold">{SITE.email}</span>
               </a>
-              <a href={`tel:${SITE.phone}`} className="group flex items-center gap-4 text-[#0a0a0a] dark:text-white transition-colors">
+              <a href={`tel:${SITE.phone}`} className="group flex items-center gap-4 text-white transition-colors">
                 <div className="accent-gradient flex h-11 w-11 items-center justify-center rounded-xl text-white shadow-[0_4px_12px_rgba(99,102,241,0.25)] group-hover:scale-110 transition-transform">
                   <FiPhone size={18} />
                 </div>
@@ -107,7 +107,7 @@ export function Contact() {
                   href={social.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex h-12 w-12 items-center justify-center rounded-xl border border-[#e5e7eb] bg-white text-[#404040] shadow-[0_1px_2px_rgba(0,0,0,0.02),0_4px_12px_rgba(0,0,0,0.04)] transition-all hover:scale-110 hover:border-[#6366f1]/30 hover:text-[#6366f1] active:scale-95 dark:border-white/10 dark:bg-white/5 dark:text-white/60 dark:hover:border-[#6366f1]/40 dark:hover:text-[#6366f1]"
+                  className="flex h-12 w-12 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white/60 shadow-[0_1px_2px_rgba(0,0,0,0.02),0_4px_12px_rgba(0,0,0,0.04)] transition-all hover:scale-110 hover:border-[#6366f1]/40 hover:text-[#6366f1] active:scale-95"
                 >
                   <social.icon size={20} />
                 </a>
@@ -120,44 +120,44 @@ export function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="rounded-2xl border border-[#e5e7eb] bg-white p-6 shadow-[0_1px_2px_rgba(0,0,0,0.02),0_4px_12px_rgba(0,0,0,0.04)] md:p-10 dark:border-white/10 dark:bg-white/5"
+            className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-[0_1px_2px_rgba(0,0,0,0.02),0_4px_12px_rgba(0,0,0,0.04)] md:p-10"
           >
             <form onSubmit={onSubmit} className="space-y-6">
               <div className="grid gap-6 md:grid-cols-2">
                 <div className="relative">
-                  <label className={`text-[10px] font-black uppercase tracking-widest transition-colors ${focusedField === 'name' ? 'text-[#6366f1]' : 'text-[#737373] dark:text-white/40'}`}>Name</label>
+                  <label className={`text-[10px] font-black uppercase tracking-widest transition-colors ${focusedField === 'name' ? 'text-[#6366f1]' : 'text-white/40'}`}>Name</label>
                   <input
                     name="name"
                     required
                     onFocus={() => setFocusedField('name')}
                     onBlur={() => setFocusedField(null)}
-                    className="mt-2 w-full rounded-xl border border-[#e5e7eb] bg-[#f8f9fc] px-4 py-3 text-base font-semibold text-[#0a0a0a] outline-none transition-all focus:border-[#6366f1] focus:shadow-[0_0_0_3px_rgba(99,102,241,0.1)] dark:border-white/10 dark:bg-white/[0.03] dark:text-white dark:focus:border-[#6366f1] dark:focus:shadow-[0_0_0_3px_rgba(99,102,241,0.2)]"
+                    className="mt-2 w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-base font-semibold text-white outline-none transition-all focus:border-[#6366f1] focus:shadow-[0_0_0_3px_rgba(99,102,241,0.2)]"
                     placeholder="John Doe"
                   />
                 </div>
                 <div className="relative">
-                  <label className={`text-[10px] font-black uppercase tracking-widest transition-colors ${focusedField === 'email' ? 'text-[#6366f1]' : 'text-[#737373] dark:text-white/40'}`}>Email</label>
+                  <label className={`text-[10px] font-black uppercase tracking-widest transition-colors ${focusedField === 'email' ? 'text-[#6366f1]' : 'text-white/40'}`}>Email</label>
                   <input
                     name="email"
                     type="email"
                     required
                     onFocus={() => setFocusedField('email')}
                     onBlur={() => setFocusedField(null)}
-                    className="mt-2 w-full rounded-xl border border-[#e5e7eb] bg-[#f8f9fc] px-4 py-3 text-base font-semibold text-[#0a0a0a] outline-none transition-all focus:border-[#6366f1] focus:shadow-[0_0_0_3px_rgba(99,102,241,0.1)] dark:border-white/10 dark:bg-white/[0.03] dark:text-white dark:focus:border-[#6366f1] dark:focus:shadow-[0_0_0_3px_rgba(99,102,241,0.2)]"
+                    className="mt-2 w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-base font-semibold text-white outline-none transition-all focus:border-[#6366f1] focus:shadow-[0_0_0_3px_rgba(99,102,241,0.2)]"
                     placeholder="john@example.com"
                   />
                 </div>
               </div>
 
               <div className="relative">
-                <label className={`text-[10px] font-black uppercase tracking-widest transition-colors ${focusedField === 'message' ? 'text-[#6366f1]' : 'text-[#737373] dark:text-white/40'}`}>Message</label>
+                <label className={`text-[10px] font-black uppercase tracking-widest transition-colors ${focusedField === 'message' ? 'text-[#6366f1]' : 'text-white/40'}`}>Message</label>
                 <textarea
                   name="message"
                   required
                   rows={4}
                   onFocus={() => setFocusedField('message')}
                   onBlur={() => setFocusedField(null)}
-                  className="mt-2 w-full rounded-xl border border-[#e5e7eb] bg-[#f8f9fc] px-4 py-3 text-base font-semibold text-[#0a0a0a] outline-none transition-all focus:border-[#6366f1] focus:shadow-[0_0_0_3px_rgba(99,102,241,0.1)] dark:border-white/10 dark:bg-white/[0.03] dark:text-white dark:focus:border-[#6366f1] dark:focus:shadow-[0_0_0_3px_rgba(99,102,241,0.2)] resize-none"
+                  className="mt-2 w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-base font-semibold text-white outline-none transition-all focus:border-[#6366f1] focus:shadow-[0_0_0_3px_rgba(99,102,241,0.2)] resize-none"
                   placeholder="Tell me about your project..."
                 />
               </div>

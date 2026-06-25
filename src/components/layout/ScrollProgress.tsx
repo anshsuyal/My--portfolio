@@ -12,7 +12,7 @@ export function ScrollProgress() {
         aria-hidden
       />
       <motion.div
-        className="pointer-events-none fixed inset-x-0 top-0 z-[60] h-[2px] origin-left bg-[#e5e7eb] dark:bg-white/10"
+        className="pointer-events-none fixed inset-x-0 top-0 z-[60] h-[2px] origin-left bg-white/10"
         style={{ scaleX: 1 }}
         aria-hidden
       />

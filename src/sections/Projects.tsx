@@ -29,9 +29,9 @@ function ProjectCard({ project, index, isFeatured }: { project: (typeof projects
         onMouseMove={onMove}
         onMouseLeave={onLeave}
         style={{ rotateX, rotateY, transformPerspective: 1200 }}
-        className="group relative h-full overflow-hidden rounded-2xl border border-[#e5e7eb] bg-white p-2 shadow-[0_1px_2px_rgba(0,0,0,0.02),0_4px_12px_rgba(0,0,0,0.04)] transition-all duration-500 hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] dark:border-white/10 dark:bg-white/5"
+        className="group relative h-full overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-2 shadow-[0_1px_2px_rgba(0,0,0,0.02),0_4px_12px_rgba(0,0,0,0.04)] transition-all duration-500 hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)]"
       >
-        <div className="relative h-full w-full overflow-hidden rounded-xl bg-[#f8f9fc] dark:bg-white/5">
+        <div className="relative h-full w-full overflow-hidden rounded-xl bg-white/5">
           <img
             src={project.image}
             alt={project.title}
@@ -72,7 +72,7 @@ function ProjectCard({ project, index, isFeatured }: { project: (typeof projects
           </div>
 
           {!isFeatured && (
-            <div className="absolute left-4 top-4 rounded-lg bg-white/90 backdrop-blur-sm px-3 py-1.5 text-[9px] font-black uppercase tracking-widest text-[#0a0a0a] dark:bg-[#0a0a0a]/90 dark:text-white border border-white/20">
+            <div className="absolute left-4 top-4 rounded-lg bg-[#0a0a0a]/90 backdrop-blur-sm px-3 py-1.5 text-[9px] font-black uppercase tracking-widest text-white border border-white/20">
               {project.category}
             </div>
           )}
@@ -91,7 +91,7 @@ export function Projects() {
   )
 
   return (
-    <section id="projects" className="relative overflow-hidden px-4 py-24 md:py-32 md:px-8 bg-white dark:bg-transparent">
+    <section id="projects" className="relative overflow-hidden px-4 py-24 md:py-32 md:px-8 bg-transparent">
       <div className="container mx-auto max-w-7xl">
         <div className="flex flex-col items-center justify-center text-center">
           <motion.p
@@ -107,7 +107,7 @@ export function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="mt-4 font-display text-4xl font-black tracking-tight text-[#0a0a0a] dark:text-white md:text-5xl lg:text-6xl"
+            className="mt-4 font-display text-4xl font-black tracking-tight text-white md:text-5xl lg:text-6xl"
           >
             Recent Work<span className="text-[#6366f1]">.</span>
           </motion.h2>
@@ -126,7 +126,7 @@ export function Projects() {
                 className={`rounded-xl px-5 py-2 text-[10px] font-black uppercase tracking-[0.2em] transition-all border ${
                     filter === f.id
                     ? 'accent-gradient text-white border-transparent shadow-[0_4px_12px_rgba(99,102,241,0.25)]'
-                    : 'bg-white text-[#737373] border-[#e5e7eb] hover:border-[#6366f1]/30 hover:text-[#6366f1] dark:bg-white/5 dark:text-white/50 dark:border-white/10 dark:hover:border-[#6366f1]/40 dark:hover:text-[#6366f1]'
+                    : 'bg-white/5 text-white/50 border-white/10 hover:border-[#6366f1]/40 hover:text-[#6366f1]'
                 }`}
               >
                 {f.label}

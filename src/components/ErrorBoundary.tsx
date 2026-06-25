@@ -23,11 +23,11 @@ export class ErrorBoundary extends Component<Props, State> {
   render() {
     if (this.state.hasError) {
       return (
-        <main className="flex min-h-dvh items-center justify-center bg-[#f8f9fc] px-6 text-[#0a0a0a] dark:bg-[#030712] dark:text-white">
+        <main className="flex min-h-dvh items-center justify-center bg-[#030712] px-6 text-white">
           <section className="max-w-md text-center">
             <p className="text-[10px] font-black uppercase tracking-[0.4em] text-[#6366f1]">Something went wrong</p>
             <h1 className="mt-4 font-display text-4xl font-black tracking-tight">Please refresh the page.</h1>
-            <p className="mt-5 text-sm leading-6 text-[#737373] dark:text-white/60">
+            <p className="mt-5 text-sm leading-6 text-white/60">
               If the issue continues, contact {SITE.name} at{' '}
               <a className="font-bold text-[#6366f1]" href={`mailto:${SITE.email}`}>
                 {SITE.email}

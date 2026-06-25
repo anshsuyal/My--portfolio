@@ -26,7 +26,7 @@ export function SectionHeading({ eyebrow, title, subtitle, align = 'center' }: S
         </motion.p>
       )}
       <motion.h2
-        className="font-display text-3xl font-bold tracking-tight text-[#0a0a0a] dark:text-white md:text-4xl lg:text-5xl"
+        className="font-display text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl"
         initial={reduced ? false : { opacity: 0, y: 16 }}
         whileInView={reduced ? undefined : { opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-10% 0px' }}
@@ -36,7 +36,7 @@ export function SectionHeading({ eyebrow, title, subtitle, align = 'center' }: S
       </motion.h2>
       {subtitle && (
         <motion.p
-          className={`mx-auto mt-4 max-w-2xl text-base leading-relaxed text-[#404040] dark:text-white/60 md:text-lg ${isCenter ? '' : ''}`}
+          className={`mx-auto mt-4 max-w-2xl text-base leading-relaxed text-white/60 md:text-lg ${isCenter ? '' : ''}`}
           initial={reduced ? false : { opacity: 0, y: 10 }}
           whileInView={reduced ? undefined : { opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-10% 0px' }}

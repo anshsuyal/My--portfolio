@@ -16,13 +16,13 @@ export function Home() {
       <Particles count={30} />
       <Hero />
       <About />
-      <div className="h-px w-full max-w-7xl mx-auto bg-gradient-to-r from-transparent via-[#e5e7eb] to-transparent dark:via-white/10" />
+      <div className="h-px w-full max-w-7xl mx-auto bg-gradient-to-r from-transparent via-white/10 to-transparent" />
       <Skills />
-      <div className="h-px w-full max-w-7xl mx-auto bg-gradient-to-r from-transparent via-[#e5e7eb] to-transparent dark:via-white/10" />
+      <div className="h-px w-full max-w-7xl mx-auto bg-gradient-to-r from-transparent via-white/10 to-transparent" />
       <Projects />
-      <div className="h-px w-full max-w-7xl mx-auto bg-gradient-to-r from-transparent via-[#e5e7eb] to-transparent dark:via-white/10" />
+      <div className="h-px w-full max-w-7xl mx-auto bg-gradient-to-r from-transparent via-white/10 to-transparent" />
       <Experience />
-      <div className="h-px w-full max-w-7xl mx-auto bg-gradient-to-r from-transparent via-[#e5e7eb] to-transparent dark:via-white/10" />
+      <div className="h-px w-full max-w-7xl mx-auto bg-gradient-to-r from-transparent via-white/10 to-transparent" />
       <Contact />
     </>
   )
