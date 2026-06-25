@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { FiMenu, FiX } from 'react-icons/fi'
 import { SITE, navLinks } from '../../constants/site'
 import { useActiveSection } from '../../hooks/useActiveSection'
@@ -9,9 +10,27 @@ import { MagneticButton } from '../ui/MagneticButton'
 const ids = navLinks.map((l) => l.id)
 
 export function Navbar() {
+  const navigate = useNavigate()
+  const location = useLocation()
   const active = useActiveSection(ids)
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+
+  // Handle cross-page navigation and scrolling
+  const handleNavigation = (id: string) => {
+    if (id === 'projects') {
+      navigate('/projects')
+      return
+    }
+
+    if (location.pathname !== '/') {
+      navigate(`/#${id}`)
+      // Short delay to allow route transition before scrolling
+      setTimeout(() => scrollToId(id), 100)
+    } else {
+      scrollToId(id)
+    }
+  }
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20)
@@ -34,7 +53,7 @@ export function Navbar() {
         {/* Logo */}
         <div className="flex items-center gap-2 pr-3 md:pr-4 border-r border-white/10">
           <button
-            onClick={() => scrollToId('hero')}
+            onClick={() => handleNavigation('hero')}
             className="group flex items-center gap-1.5 transition-transform hover:scale-105"
           >
             <div className="w-8 h-8 rounded-xl accent-gradient flex items-center justify-center text-white font-black text-sm shadow-[0_4px_12px_rgba(99,102,241,0.3)]">
@@ -51,7 +70,7 @@ export function Navbar() {
           {navLinks.map((link) => (
             <button
               key={link.id}
-              onClick={() => scrollToId(link.id)}
+              onClick={() => handleNavigation(link.id)}
               className={`relative px-3 py-2 text-[10px] font-black uppercase tracking-[0.2em] transition-colors rounded-xl ${
                   active === link.id
                     ? 'text-[#6366f1]'
@@ -126,7 +145,7 @@ export function Navbar() {
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ delay: 0.1 * i }}
                     onClick={() => {
-                      scrollToId(link.id)
+                      handleNavigation(link.id)
                       setOpen(false)
                     }}
                     className={`text-left text-4xl font-display font-black tracking-tighter transition-all hover:pl-4 ${

@@ -14,6 +14,7 @@ const base =
 const styles: Record<Variant, string> = {
   primary:
     'accent-gradient text-white shadow-[0_4px_14px_rgba(99,102,241,0.25)] hover:shadow-[0_8px_24px_rgba(99,102,241,0.35)] hover:scale-[1.02]',
+  ghost:
     'bg-white/5 border border-white/10 text-white/60 hover:border-[#6366f1]/40 hover:text-[#6366f1] hover:bg-white/10 shadow-[0_1px_2px_rgba(0,0,0,0.02),0_4px_12px_rgba(0,0,0,0.04)]',
 }
 
