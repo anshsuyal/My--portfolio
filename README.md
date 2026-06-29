@@ -4,7 +4,7 @@
 
 ### A modern, animated, MERN-developer portfolio built with React 19, TypeScript, and Tailwind CSS v4.
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-6366f1?style=for-the-badge&logo=vercel&logoColor=white)](https://anshusuyalportfolio.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-6366f1?style=for-the-badge&logo=vercel&logoColor=white)](https://myportfolio-lemon-two-89.vercel.app/)
 </div>
 
 ---
